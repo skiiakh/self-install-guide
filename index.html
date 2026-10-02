@@ -28,6 +28,13 @@
             max-width: 100%;
             object-fit: contain;
         }
+
+        .video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
     </style>
 </head>
 <body>
@@ -45,6 +52,14 @@
 <p>
     Some text.
 </p>
-<p>
-    <a href="https://www.youtube.com/watch?v=J0UGdxYwb0g">Watch video guide</a>
-</p>
+<iframe
+    class="video"
+    src="https://www.youtube-nocookie.com/embed/J0UGdxYwb0g?rel=0"
+    title="Video guide"
+    allow="encrypted-media; fullscreen; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+></iframe>
+
+    </body>
+</html>
